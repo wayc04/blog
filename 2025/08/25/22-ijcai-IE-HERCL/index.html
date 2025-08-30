@@ -7,7 +7,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://wayc04.github.io/blog/img/avatar.jpg">
 <meta property="article:published_time" content="2025-08-25T11:04:52.000Z">
-<meta property="article:modified_time" content="2025-08-30T15:47:54.098Z">
+<meta property="article:modified_time" content="2025-08-30T16:26:42.224Z">
 <meta property="article:author" content="way">
 <meta property="article:tag" content="blog">
 <meta name="twitter:card" content="summary">
@@ -18,7 +18,7 @@
   "url": "http://wayc04.github.io/blog/2025/08/25/22-ijcai-IE-HERCL/",
   "image": "http://wayc04.github.io/blog/img/avatar.jpg",
   "datePublished": "2025-08-25T11:04:52.000Z",
-  "dateModified": "2025-08-30T15:47:54.098Z",
+  "dateModified": "2025-08-30T16:26:42.224Z",
   "author": [
     {
       "@type": "Person",
@@ -163,7 +163,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
-<!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head><body><div id="web_bg" style="background-image: url(https://www.wayc04.com/blog/img/bg.JPG);"></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background: transparent;"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/blog/"><span class="site-name">way's blog</span></a><a class="nav-page-title" href="/blog/"><span class="site-name">22 IJCAI Image-Enhanced Hybrid Encoding with Reinforced Constrastive Learning for Spatial Domain Identification in Spatial Transcriptomics</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"></div></nav><div id="post-info"><h1 class="post-title">22 IJCAI Image-Enhanced Hybrid Encoding with Reinforced Constrastive Learning for Spatial Domain Identification in Spatial Transcriptomics</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-08-25T11:04:52.000Z" title="发表于 2025-08-25 19:04:52">2025-08-25</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-08-30T15:47:54.098Z" title="更新于 2025-08-30 23:47:54">2025-08-30</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/blog/categories/paper/">paper</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/blog/categories/paper/ai4sci/">ai4sci</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/blog/categories/paper/ai4sci/spatialTranscriptomics/">spatialTranscriptomics</a></span></div><div class="meta-secondline"></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h3 id="Concept"><a href="#Concept" class="headerlink" title="Concept"></a>Concept</h3><p><strong>Frobenius 内积</strong></p>
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head><body><div id="web_bg" style="background-image: url(https://www.wayc04.com/blog/img/bg.JPG);"></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background: transparent;"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/blog/"><span class="site-name">way's blog</span></a><a class="nav-page-title" href="/blog/"><span class="site-name">22 IJCAI Image-Enhanced Hybrid Encoding with Reinforced Constrastive Learning for Spatial Domain Identification in Spatial Transcriptomics</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"></div></nav><div id="post-info"><h1 class="post-title">22 IJCAI Image-Enhanced Hybrid Encoding with Reinforced Constrastive Learning for Spatial Domain Identification in Spatial Transcriptomics</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-08-25T11:04:52.000Z" title="发表于 2025-08-25 19:04:52">2025-08-25</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-08-30T16:26:42.224Z" title="更新于 2025-08-31 00:26:42">2025-08-31</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/blog/categories/paper/">paper</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/blog/categories/paper/ai4sci/">ai4sci</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/blog/categories/paper/ai4sci/spatialTranscriptomics/">spatialTranscriptomics</a></span></div><div class="meta-secondline"></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h3 id="Concept"><a href="#Concept" class="headerlink" title="Concept"></a>Concept</h3><p><strong>Frobenius 内积</strong></p>
 <p>两个矩阵进行逐元素的相乘， 并且将其累加。 可以用于衡量矩阵间的相似性。</p>
 <script type="math/tex; mode=display">
 <\mathrm{A}, \mathrm{B}>_F \ = \sum^n_{i=1} \sum^m_{j=1} a_{ij} b_{ij}</script><p><strong>optimal transport</strong></p>
@@ -243,19 +243,21 @@ p_{i,u} = \frac{q_{i,u} / \sum_i q_{i,u}}{\sum_k ( q^2_{i,k} / \sum_i q_{i,k})}
 \end{align}</script><h5 id="Optimal-Transport-Objective"><a href="#Optimal-Transport-Objective" class="headerlink" title="Optimal Transport Objective"></a>Optimal Transport Objective</h5><p>将其视为一个 optimal transport task， 目标函数是最小化 Q 到 P 的传输质量消耗， 并且通过 entropy regularization 保证平滑:</p>
 <script type="math/tex; mode=display">
 \begin{align} 
-\nonumber
-OT(C, Q, P)^\epsilon & = \min_{\gamma}<\gamma, C>_F + \epsilon \cdot \sum_{i, j} \gamma_{i, j} \log(\gamma_{i,j}), \\
+OT(C, Q, P)^\epsilon & = \min_{\gamma}<\gamma, C>_F + \epsilon \cdot \sum_{i, j} \gamma_{i, j} \log(\gamma_{i,j}), \nonumber \\
 \text{s.t.} \sum_{j}\gamma_{ij} & = Q_i; \sum_{i}\gamma_{ij}=P_j;\gamma_{ij} \ge 0, \label{ot}
 \end{align}</script><p>其中 $C$ 是 $Q$ 和 $P$ 中点以欧氏距离为代价的代价矩阵， $\gamma_{i,j}$ 代表从 $Q$ 的 $i-th$ 元素到 $P$ 的 $j-th$ 元素的传输计划， $\epsilon$ 代表 entropy regularization 的强度。</p>
 <p>为有效的评估分布间的一致性， 采用 Sinkhorn divergence <sup class="refplus-num"><a href="#ref-yu2024unsupervised">[1]</a></sup>：
 $$
 \begin{align}
-\nonumber
-\mathcal{L}_s = S_{\epsilon} := OT(M, Q, P)^{\epsilon} \\
+\mathcal{L}_s = S_{\epsilon} := OT(M, Q, P)^{\epsilon} 
  - \frac{1}{2}(OT(M, Q, Q)^{\epsilon} + OT(M, P, P)^{\epsilon})
 \end{align}
 $$
 $\ref{ot}$ 的优化直到达到预定义的最大迭代次数。
+
+
+
+
 
 #### Overall Optimization Objective
 
@@ -266,6 +268,8 @@ $$
 \end{align}
 $$
 其中 $\lambda_1, \lambda_2 \ \text{and} \ \lambda_3$ 是不同损失的平衡项。
+
+
 
 
 
