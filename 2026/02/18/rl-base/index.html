@@ -7,7 +7,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://wayc04.github.io/blog/img/avatar.jpg">
 <meta property="article:published_time" content="2026-02-17T17:14:16.000Z">
-<meta property="article:modified_time" content="2026-02-17T17:16:23.162Z">
+<meta property="article:modified_time" content="2026-02-17T17:27:16.036Z">
 <meta property="article:author" content="way">
 <meta property="article:tag" content="blog">
 <meta name="twitter:card" content="summary">
@@ -18,7 +18,7 @@
   "url": "http://wayc04.github.io/blog/2026/02/18/rl-base/",
   "image": "http://wayc04.github.io/blog/img/avatar.jpg",
   "datePublished": "2026-02-17T17:14:16.000Z",
-  "dateModified": "2026-02-17T17:16:23.162Z",
+  "dateModified": "2026-02-17T17:27:16.036Z",
   "author": [
     {
       "@type": "Person",
@@ -163,20 +163,20 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
-<!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head><body><div id="web_bg" style="background-image: url(https://www.wayc04.com/blog/img/bg.JPG);"></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background: transparent;"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/blog/"><span class="site-name">way's blog</span></a><a class="nav-page-title" href="/blog/"><span class="site-name">强化学习的数学原理-notes</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"></div></nav><div id="post-info"><h1 class="post-title">强化学习的数学原理-notes</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-02-17T17:14:16.000Z" title="发表于 2026-02-18 01:14:16">2026-02-18</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-02-17T17:16:23.162Z" title="更新于 2026-02-18 01:16:23">2026-02-18</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/blog/categories/math/">math</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/blog/categories/math/rl/">rl</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/blog/categories/math/rl/base/">base</a></span></div><div class="meta-secondline"></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="P1-Basic-Concepts"><a href="#P1-Basic-Concepts" class="headerlink" title="P1  Basic Concepts"></a>P1  Basic Concepts</h3><p><strong>State</strong>: The status of the agent with respect to the environment.</p>
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head><body><div id="web_bg" style="background-image: url(https://www.wayc04.com/blog/img/bg.JPG);"></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background: transparent;"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/blog/"><span class="site-name">way's blog</span></a><a class="nav-page-title" href="/blog/"><span class="site-name">强化学习的数学原理-notes</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"></div></nav><div id="post-info"><h1 class="post-title">强化学习的数学原理-notes</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-02-17T17:14:16.000Z" title="发表于 2026-02-18 01:14:16">2026-02-18</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-02-17T17:27:16.036Z" title="更新于 2026-02-18 01:27:16">2026-02-18</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/blog/categories/math/">math</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/blog/categories/math/rl/">rl</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/blog/categories/math/rl/base/">base</a></span></div><div class="meta-secondline"></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="P1-Basic-Concepts"><a href="#P1-Basic-Concepts" class="headerlink" title="P1  Basic Concepts"></a>P1  Basic Concepts</h3><p><strong>State</strong>: The status of the agent with respect to the environment.</p>
 <ul>
 <li>grid-world example: the location of the agent (<script type="math/tex">s_1, s_2, s_3, \ldots, s_9</script>). </li>
 </ul>
-<p><img src="./assets/image-20260217224152449.png" alt="image-20260217224152449"></p>
+<p><img src="./rl-base/image-20260217224152449.png" alt="image-20260217224152449"></p>
 <p><strong>State space</strong>: the set of all states <script type="math/tex">S = \{s_i\}_{i=1}^9</script>.</p>
 <p><strong>Action</strong>: For each state, there are lots of possible actions: <script type="math/tex">a_1, \ldots, a_n</script>.</p>
-<p><img src="./assets/image-20260217224418063.png" alt="image-20260217224418063"></p>
+<p><img src="./rl-base/image-20260217224418063.png" alt="image-20260217224418063"></p>
 <p><strong>Action space of a state</strong>: the set of all possible actions of a state.  <script type="math/tex">A(s_i) = \{a_i\}^5_{i=1}</script>.</p>
 <p><strong>State transition</strong>: When taking an action, the agent may move from one state to another.  It defines the  interaction with the environment.  <script type="math/tex">s_1 \xrightarrow{a_2} s_2</script></p>
 <ol>
 <li>Tabular representation: could only represent deterministic cases.</li>
 </ol>
-<p><img src="./assets/image-20260217225236436.png" alt="image-20260217225236436"></p>
+<p><img src="./rl-base/image-20260217225236436.png" alt="image-20260217225236436"></p>
 <ol>
 <li><strong>State transition probability</strong>: use probability to describe state transition. This could be deterministic or stochastic.</li>
 </ol>
@@ -189,7 +189,7 @@ p(s_i | s_1, a_2) &=  0 \quad \forall i \neq 2,3 \notag
 <ol>
 <li>Intuitive representation:</li>
 </ol>
-<p><img src="./assets/image-20260217230350088.png" alt="image-20260217230350088"></p>
+<p><img src="./rl-base/image-20260217230350088.png" alt="image-20260217230350088"></p>
 <ol>
 <li><strong>Mathematical representation</strong>: using conditional probability</li>
 </ol>
@@ -203,17 +203,17 @@ p(s_i | s_1, a_2) &=  0 \quad \forall i \neq 2,3 \notag
 \end{aligned}</script><ol>
 <li><strong>Tabular representation</strong>:  could be  deterministic or stochastic cases.</li>
 </ol>
-<p><img src="./assets/image-20260217230836629.png" alt="image-20260217230836629"></p>
+<p><img src="./rl-base/image-20260217230836629.png" alt="image-20260217230836629"></p>
 <p><strong>Reward</strong>: could be interpreted as a Human-machine interface. A real number we get after taking an action.</p>
 <ul>
 <li>A <strong>positive</strong> reward represents <strong>encouragement</strong> to take such actions.</li>
 <li>A <strong>negative</strong> reward represents punishment to take such actions.</li>
 </ul>
-<p><img src="./assets/image-20260217232118905.png" alt="image-20260217232118905"></p>
+<p><img src="./rl-base/image-20260217232118905.png" alt="image-20260217232118905"></p>
 <ol>
 <li><strong>Tabular representation</strong>:</li>
 </ol>
-<p><img src="./assets/image-20260217232220624.png" alt="image-20260217232220624"></p>
+<p><img src="./rl-base/image-20260217232220624.png" alt="image-20260217232220624"></p>
 <ol>
 <li>Mathematical description: conditional probability</li>
 </ol>
@@ -223,10 +223,10 @@ p(r = -1 | s_1, a_1) &= 1 \\
 p(r \neq -1  | s_1, a_1) &= 0
 \end{aligned}</script><p><strong>Trajectory</strong>: a state-action-reward chain:</p>
 <script type="math/tex; mode=display">
-s_1 \xrightarrow[r=0]{a_2} s_2 \xrightarrow[r=0]{a_3} s_5 \xrightarrow[r=0]{a_2} s_8 \xrightarrow[r=1]{a_2} s_9</script><p><img src="./assets/image-20260217232832368.png" alt="image-20260217232832368"></p>
+s_1 \xrightarrow[r=0]{a_2} s_2 \xrightarrow[r=0]{a_3} s_5 \xrightarrow[r=0]{a_2} s_8 \xrightarrow[r=1]{a_2} s_9</script><p><img src="./rl-base/image-20260217232832368.png" alt="image-20260217232832368"></p>
 <p><strong>Return</strong>: the sum of all the rewards collected for specific trajectory</p>
 <script type="math/tex; mode=display">
-\text{return} =  0 + 0 + 0 + 1 = 1</script><p><img src="./assets/image-20260217235257446.png" alt="image-20260217235257446"></p>
+\text{return} =  0 + 0 + 0 + 1 = 1</script><p><img src="./rl-base/image-20260217235257446.png" alt="image-20260217235257446"></p>
 <p> <strong>Discounted return</strong>: introduce a discount rate $\tau \in \left[0, 1 \right)$ to solve the infinite return problem.</p>
 <script type="math/tex; mode=display">
 \begin{aligned}
